@@ -22,7 +22,7 @@ class CustomerTest < Minitest::Test
 
   def test_it_can_adopt_pets
     joel = Customer.new("Joel", 2)
-    samson = Pet.new({name: "Samson", type: :dog})
+    samson = Pet.new({name: "Samson", type: :dog, age: 1})
     lucy = Pet.new({name: "Lucy", type: :cat})
     joel.adopt(samson)
     joel.adopt(lucy)
